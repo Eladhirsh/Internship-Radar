@@ -1,12 +1,17 @@
-# Internship Signal
+# Internship Radar
 
-A public, reproducible TinyFish internship research build for U.S. software engineering and AI roles in summer 2027.
+Source for **Internship Signal**, a public TinyFish internship research build for U.S. software engineering and AI roles in summer 2027.
+
+**[Open the live demo](https://internship-signal-2027.eh3123.chatgpt.site)**
+
+The comparison covers Salesforce, Notion, Roblox, CTGT, and Two Sigma, checked on October 2, 2026. Discovery includes Greenhouse, Ashby, Workday, YC, and company careers pages. This is a dated research snapshot, not an automatically refreshed jobs feed.
 
 ## Run locally
 
 Requires Python 3, with no package installation or API key needed to view the saved comparison.
 
 ```sh
+git clone https://github.com/Eladhirsh/Internship-Radar.git internship-signal
 cd internship-signal
 python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 ```
@@ -34,11 +39,11 @@ Open http://127.0.0.1:4173/. The static app loads `dist/results.json`, displays 
 
 ## Monitor
 
-The user authorized a daily TinyFish Monitor for Salesforce's public careers page at 9 a.m. America/New_York. Creation and baseline completed. It costs $0.005 per completed run. It watches visible page content, not an exhaustive crawl; the baseline contained the first 20 of 1,530 results. Email notification delivery was not established by the API response. This monitor does not automatically rewrite the published comparison.
+A daily TinyFish Monitor was created for Salesforce's public careers page at 9 a.m. America/New_York. Creation and baseline completed. It costs $0.005 per completed run. It watches visible page content, not an exhaustive crawl; the baseline contained the first 20 of 1,530 results. Email notification delivery was not established by the API response. This monitor does not automatically rewrite the published comparison. Cloning this repository does not create a monitor in your account.
 
 ## Submission
 
-Use the successful public Sites URL as the build/results link. The LinkedIn draft is in the workspace's `linkedin-post.txt`; publishing it and selecting the TinyFish company mention are separate steps. The contest submission portal was not provided.
+Use the [public demo](https://internship-signal-2027.eh3123.chatgpt.site) as the build/results link and this repository for source and setup instructions. The LinkedIn post remains an unpublished local draft and is not included in this repository. Nothing has been submitted to the contest.
 
 ## Files
 
