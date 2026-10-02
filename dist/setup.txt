@@ -1,0 +1,38 @@
+INTERNSHIP SIGNAL — SETUP & REPRODUCTION
+
+Target: software engineering / AI, United States, summer 2027.
+Checked: October 2, 2026. Degree, graduation date and work authorization were not supplied, so matches are based on interests only.
+
+VIEW THE BUILD
+Open the public site. No account is required to read the comparison. Expand a company row for eligibility, pay, and agent evidence. Agent run links may require the run owner's TinyFish login; the downloadable evidence file provides the extracted results publicly.
+
+RUN LOCALLY
+Requires Python 3. From the internship-signal project directory, run:
+python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
+Then open http://127.0.0.1:4173/.
+
+REPEAT THE AGENT WORKFLOW
+1. Connect TinyFish in ChatGPT and ensure your account has credits.
+2. On this page, choose role keywords and a source. Copy the generated discovery prompt into ChatGPT with TinyFish connected. Search each source separately.
+3. Open https://agent.tinyfish.ai/ for the Agent Playground reproduction path. Supply an official role URL and the verification-prompt.txt prompt. Run the agent and wait for completion. The original research used connected TinyFish browser agents in ChatGPT, not the Playground UI.
+4. Keep only open roles that explicitly match U.S. summer 2027. Treat application buttons as observed availability, not a guarantee the employer will keep the job open. Record unknowns rather than infer eligibility.
+5. Compare five companies in the same table. Keep exact company, title, location, link, observation date and run evidence. Treat any explanation of fit as an interpretation of the role description, not an employer endorsement.
+6. Update results.json and the visible checked date, then publish the dist directory.
+
+SEARCH SOURCES
+Greenhouse: job-boards.greenhouse.io and boards.greenhouse.io. Employer job boards may redirect to a company careers site.
+Ashby: jobs.ashbyhq.com. Notion's public role returned empty extraction content, but the browser agent read it successfully.
+Workday: employer-specific myworkdayjobs.com subdomains. Reading a job and submitting an application are separate access steps.
+YC: ycombinator.com/companies and workatastartup.com. Confirm internship season on the actual role, not just the search snippet.
+
+The Search public listings button opens a domain-scoped Google search. It does not run a TinyFish agent. The prompt generator runs locally; paid agent work takes place in your TinyFish account. The comparison does not refresh automatically.
+
+BONUS MONITOR
+An active TinyFish Monitor checks https://www.salesforce.com/company/careers/jobs/ daily at 9 a.m. America/New_York for new U.S. software/AI internships. A completed check costs $0.005. The baseline ran on October 2, 2026 and only included the visible first 20 results of 1,530. Coverage is not exhaustive. No webhook was configured; the creation response did not confirm email delivery. Check notification settings in TinyFish before claiming inbox delivery. The monitor does not update this site.
+
+SUBMISSION
+Share the public build link. Publish a LinkedIn post about the build and select the real TinyFish company mention so it becomes an actual tag. Submit both URLs to the workshop portal. A draft alone does not satisfy the LinkedIn-post requirement.
+
+EVIDENCE
+results.json contains the five-company comparison.
+agent-evidence.json contains the completed TinyFish agent outputs, including additional roles researched.
